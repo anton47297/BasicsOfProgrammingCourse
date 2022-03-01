@@ -5,8 +5,13 @@
 
 void removeNonLetters(char *s);
 
+// Преобразовывает строку,
+// оставляя только один символ в каждой последовательности
+// подряд идущих одинаковых символов
 void removeAdjacentEqualLetters(char *s);
 
+// Сокращает количество пробелов
+// между словами данного предложения до одного
 void removeExtraSpaces(char *s);
 
 // перенести цифры в конец слова
@@ -16,5 +21,9 @@ void movingDigitToEnd(WordDescriptor word);
 // перенесены в конец слова, и изменить порядок следования цифр в слове
 // на обратный, буквы перенести в начало слова
 void digitRevers(char *str);
+
+// Преобразовывает строку,
+// заменяя каждую цифру соответствующим ей числом пробелов
+void convertsStringByReplacingDigit();
 
 #endif//MAIN_C_TASKS_STRING_H

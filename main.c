@@ -4,7 +4,8 @@
 
 int main() {
 
-    test_str();
+    //test_str();
+    test_tasks_string();
 
     return 0;
 }

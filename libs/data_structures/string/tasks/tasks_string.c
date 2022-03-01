@@ -67,3 +67,8 @@ void digitRevers(char *str) {
         beginStr = word.end;
     }
 }
+
+// Task 4
+
+void convertsStringByReplacingDigit() {
+}
