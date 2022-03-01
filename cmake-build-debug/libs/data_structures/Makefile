@@ -177,6 +177,30 @@ string/string_.c.s:
 	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
+string/test_string.obj: string/test_string.c.obj
+.PHONY : string/test_string.obj
+
+# target to build an object file
+string/test_string.c.obj:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/test_string.c.obj
+.PHONY : string/test_string.c.obj
+
+string/test_string.i: string/test_string.c.i
+.PHONY : string/test_string.i
+
+# target to preprocess a source file
+string/test_string.c.i:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/test_string.c.i
+.PHONY : string/test_string.c.i
+
+string/test_string.s: string/test_string.c.s
+.PHONY : string/test_string.s
+
+# target to generate assembly for a file
+string/test_string.c.s:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/test_string.c.s
+.PHONY : string/test_string.c.s
+
 vector/vector.obj: vector/vector.c.obj
 .PHONY : vector/vector.obj
 
@@ -216,6 +240,9 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
+	@echo ... string/test_string.obj
+	@echo ... string/test_string.i
+	@echo ... string/test_string.s
 	@echo ... vector/vector.obj
 	@echo ... vector/vector.i
 	@echo ... vector/vector.s
