@@ -5,7 +5,7 @@
 		<Option title="Lab"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\data_structures\;CMake Files\libs\algorithms\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\data_structures\;CMake Files\libs\data_structures\string\;CMake Files\libs\algorithms\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/C/Lab/cmake-build-debug"/>
@@ -109,6 +109,42 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="string">
+				<Option output="C:/C/Lab/cmake-build-debug/libs/data_structures/string/libstring.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/C/Lab/cmake-build-debug/libs/data_structures/string"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 string"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="string/fast">
+				<Option output="C:/C/Lab/cmake-build-debug/libs/data_structures/string/libstring.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/C/Lab/cmake-build-debug/libs/data_structures/string"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 string/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/C/Lab/cmake-build-debug/libs/data_structures/string/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="algorithms">
 				<Option output="C:/C/Lab/cmake-build-debug/libs/algorithms/libalgorithms.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/C/Lab/cmake-build-debug/libs/algorithms"/>
@@ -160,9 +196,23 @@
 		</Unit>
 		<Unit filename="C:/C/Lab/libs/data_structures/string/string_.c">
 			<Option target="data_structures"/>
+			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/C/Lab/libs/data_structures/string/string_.h">
 			<Option target="data_structures"/>
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/tasks/tasks_string.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/tasks/tasks_string.h">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/tasks/tests_tasks_string.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/tasks/tests_tasks_string.h">
+			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/C/Lab/libs/data_structures/string/test_string.c">
 			<Option target="data_structures"/>
@@ -187,6 +237,9 @@
 		</Unit>
 		<Unit filename="C:/C/Lab/libs/data_structures/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\data_structures\"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\data_structures\string\"/>
 		</Unit>
 		<Unit filename="C:/C/Lab/libs/algorithms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\algorithms\"/>

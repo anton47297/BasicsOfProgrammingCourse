@@ -5,4 +5,5 @@ add_library(data_structures
         string/test_string.c
         )
 
+add_subdirectory(string)
 target_link_libraries(data_structures algorithms)

@@ -57,4 +57,6 @@ char* copyIf(char *beginSource, const char *endSource,
 char* copyIfReverse(char *rbeginSource, const char *rendSource,
                     char *beginDestination, int (*f)(int));
 
+char *getEndOfString(char *str);
+
 #endif//MAIN_C_STRING__H

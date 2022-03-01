@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../libs/CMakeLists.txt"
   "../libs/algorithms/CMakeLists.txt"
   "../libs/data_structures/CMakeLists.txt"
+  "../libs/data_structures/string/CMakeLists.txt"
   "C:/Program Files/JetBrains/CLion 2021.2.1/bin/cmake/win/share/cmake-3.20/Modules/CMakeCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2021.2.1/bin/cmake/win/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/Program Files/JetBrains/CLion 2021.2.1/bin/cmake/win/share/cmake-3.20/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -47,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/data_structures/string/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -54,5 +56,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Lab.dir/DependInfo.cmake"
   "libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
+  "libs/data_structures/string/CMakeFiles/string.dir/DependInfo.cmake"
   "libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
   )
