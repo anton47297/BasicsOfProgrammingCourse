@@ -136,7 +136,7 @@ CMakeFiles/Lab.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Lab.dir/rule
@@ -157,12 +157,12 @@ CMakeFiles/Lab.dir/clean:
 libs/data_structures/CMakeFiles/data_structures.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=5,6,7 "Built target data_structures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8 "Built target data_structures"
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/all
 
 # Build rule for subdir invocation for target.
 libs/data_structures/CMakeFiles/data_structures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 0
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/rule

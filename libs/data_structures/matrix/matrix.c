@@ -225,15 +225,15 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t
 /*                       2 часть
                                                                      */
 
-/* 1 task */
+/* 1 task
 void swapRowsWithMinValuesAndMaxValues(matrix m) {
     position maxPos = getMaxValuePos(m);
     position minPos = getMinValuePos(m);
 
     swapRows(m, maxPos.rowIndex, minPos.rowIndex);
-}
+}*/
 
-/* 2 task */
+/* 2 task
 int getMax(int *a, const size_t n) {
     int max = a[0];
     for (int i = 0; i < n; i++)
@@ -244,9 +244,9 @@ int getMax(int *a, const size_t n) {
 
 void sortRowsByMinElement(matrix m) {
     insertionSortRowsMatrixByRowCriteria(m, getMax);
-}
+}*/
 
-/* 3 task */
+/* 3 task
 
 int getMin(int *a, int n) {
     int min = a[0];
@@ -259,9 +259,9 @@ int getMin(int *a, int n) {
 
 void sortColsByMinElement(matrix m) {
     insertionSortColsMatrixByColCriteria(m, getMin);
-}
+}*/
 
-/* 4 task */
+/* 4 task
 
 matrix mulMatrices(matrix m1, matrix m2) {
     assert(m1.nCols == m2.nRows);
@@ -284,11 +284,11 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
     matrix squareMatrix = mulMatrices(*m, *m);
 
     *m = squareMatrix;
-}
+}*/
 
 /* 5 task */
 
-bool isUnique(long long *a, int n) {
+/* bool isUnique(long long *a, int n) {
     for (int i = 1; i < n; i++)
         if (a[i] == a[i - 1])
             return false;
@@ -312,9 +312,9 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
         return;
 
     transposeSquareMatrix(m);
-}
+}*/
 
-/* 6 task */
+/* 6 task
 
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
@@ -326,9 +326,9 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     freeMemMatrix(m);
 
     return result;
-}
+}*/
 
-/* 7 task */
+/* 7 task
 
 int max(int a, int b) {
     return a > b ? a : b;
@@ -356,9 +356,9 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
     free(diagonalMaxEl);
 
     return res;
-}
+}*/
 
-/* 8 task */
+/* 8 task
 
 int min(int a, int b) {
     return a > b ? b : a;
@@ -386,9 +386,9 @@ int getMinInArea(matrix m) {
     }
 
     return minVl;
-}
+}*/
 
-/* 9 task */
+/* 9 task
 
 float getDistance(int *a, int n) {
     int sum = 0;
@@ -415,9 +415,9 @@ void insertionSortRowsMatrixByRowCriteriaF(matrix m,
 
 void sortByDistances(matrix m) {
     insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
-}
+}*/
 
-/* 10 task */
+/* 10 task
 
 int cmp_long_long(const void *pa, const void *pb) {
     long long arg1 = *(const long long *) pa;
@@ -448,9 +448,9 @@ int countEqClassesByRowsSum(matrix m) {
     free(sum);
 
     return res;
-}
+}*/
 
-/* 11 task */
+/* 11 task
 
 int getNSpecialElement(matrix m) {
     int count = 0;
@@ -481,9 +481,9 @@ int getNSpecialElement(matrix m) {
         }
     }
     return count;
-}
+}*/
 
-/* 12 task */
+/* 12 task
 
 position getLeftMin(matrix m) {
     position minPos = {0, 0};
@@ -507,9 +507,9 @@ void swapPenultimateRow(matrix m) {
     memcpy(m.values[m.nRows - 2], col, sizeof(int) * m.nCols);
 
     free(col);
-}
+}*/
 
-/* 13 task */
+/* 13 task
 
 bool isNonDescendingSorted(int *a, int n) {
     for (size_t i = 1; i < n; i++) {
@@ -533,9 +533,9 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
         nRightMatrix += hasAllNonDescendingRows(ms[i]);
     }
     return nRightMatrix;
-}
+}*/
 
-/* 14 task */
+/* 14 task
 
 int countValues(const int *a, int n, int value) {
     int count = 0;
@@ -564,9 +564,9 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     for (int i = 0; i < nMatrix; i++)
         if (maxZeroMatrix[i] == max)
             outputMatrix(ms[i]);
-}
+}*/
 
-/* 15 task */
+/* 15 task
 
 int getNormMatrix(matrix ms) {
     position minPos = getMinValuePos(ms);
@@ -588,5 +588,4 @@ void printOfMatricesInTheMinNorm(matrix *ms, int nMatrix) {
     for (int i = 0; i < nMatrix; ++i) {
         if (minNorm == normMatrix[i])
             outputMatrix(ms[i]);
-    }
-}
+    }*/

@@ -9,3 +9,4 @@ add_subdirectory(libs)
 
 target_link_libraries(Lab data_structures)
 target_link_libraries(Lab algorithms)
+

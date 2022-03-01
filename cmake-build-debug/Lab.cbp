@@ -158,6 +158,12 @@
 		<Unit filename="C:/C/Lab/libs/data_structures/matrix/matrix.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/string_.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/C/Lab/libs/data_structures/string/string_.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/C/Lab/libs/data_structures/vector/vector.c">
 			<Option target="data_structures"/>
 		</Unit>
