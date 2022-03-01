@@ -90,3 +90,25 @@ char *getEndOfString(char *str){
 
     return str;
 }
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+
+}
+
+int getWordRevers(char *rbegin, char *rend, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rbegin, rend);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpaceReverse(word->end, rend);
+
+    return 1;
+
+}

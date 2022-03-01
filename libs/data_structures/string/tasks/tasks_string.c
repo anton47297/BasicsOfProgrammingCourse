@@ -47,3 +47,23 @@ void removeExtraSpaces(char *s) {
 }
 
 // Task 3
+
+void movingDigitToEnd(WordDescriptor word) {
+    char *endStringBuffer = copy(word.begin, word.end,
+                                 _stringBuffer);
+    char *recPosition = copyIf(_stringBuffer, endStringBuffer, word.begin, isalpha);
+
+    copyIfReverse(endStringBuffer - 1,
+                  _stringBuffer - 1,
+                  recPosition, isdigit);
+}
+
+void digitRevers(char *str) {
+    char *beginStr = str;
+    WordDescriptor word;
+
+    while (getWord(beginStr, &word)) {
+        movingDigitToEnd(word);
+        beginStr = word.end;
+    }
+}
