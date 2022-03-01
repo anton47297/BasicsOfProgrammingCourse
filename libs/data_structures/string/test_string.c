@@ -244,9 +244,7 @@ void test_str() {
     test_findSpace();
     test_findNonSpaceReverse();
     test_findSpaceReverse();
-
     test_strcmp();
-
     test_copy();
     test_copyIf();
     test_copyIfReverse();

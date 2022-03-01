@@ -5,6 +5,8 @@
 
 void removeNonLetters(char *s);
 
+void removeAdjacentEqualLetters(char *s);
+
 void removeExtraSpaces(char *s);
 
 #endif//MAIN_C_TASKS_STRING_H

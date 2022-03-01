@@ -8,6 +8,24 @@ void removeNonLetters(char *s) {
 }
 
 // Task 2
+void removeAdjacentEqualLetters(char *s) {
+    if (*s == '\0')
+        return;
+
+    char *lastWriten = s;
+    s++;
+
+    while (*s) {
+        if (*lastWriten != *s) {
+            lastWriten++;
+            memcpy(lastWriten, s, sizeof(char));
+        }
+        s++;
+    }
+    lastWriten++;
+    *lastWriten = '\0';
+}
+
 void removeExtraSpaces(char *s) {
     if (*s == '\0')
         return;
@@ -27,3 +45,5 @@ void removeExtraSpaces(char *s) {
     lastWriten++;
     *lastWriten = '\0';
 }
+
+// Task 3
