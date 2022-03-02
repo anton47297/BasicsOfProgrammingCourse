@@ -116,9 +116,36 @@ void test_digitRevers() {
     test_digitRevers2();
 }
 
+void test_convertsStringByReplacingDigit1() {
+    char str[] = "2mme";
+
+    convertsStringByReplacingDigit(str);
+
+    char res[] = "  mme";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_convertsStringByReplacingDigit2() {
+    char str[] = "1pwn3tf 1";
+
+    convertsStringByReplacingDigit(str);
+
+    char res[] = " pwn   tf  ";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_convertsStringByReplacingDigit() {
+    test_convertsStringByReplacingDigit1();
+    test_convertsStringByReplacingDigit2();
+}
+
+
 void test_tasks_string() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
     test_removeExtraSpaces();
     test_digitRevers();
+    test_convertsStringByReplacingDigit();
 }

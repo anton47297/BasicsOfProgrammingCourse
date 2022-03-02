@@ -24,6 +24,6 @@ void digitRevers(char *str);
 
 // Преобразовывает строку,
 // заменяя каждую цифру соответствующим ей числом пробелов
-void convertsStringByReplacingDigit();
+void convertsStringByReplacingDigit(char *str);
 
 #endif//MAIN_C_TASKS_STRING_H
