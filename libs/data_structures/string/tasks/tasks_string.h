@@ -39,4 +39,6 @@ void printWord(WordDescriptor w);
 
 void printRevers(char *str);
 
+bool identifyIdenticalWords(char *str);
+
 #endif//MAIN_C_TASKS_STRING_H

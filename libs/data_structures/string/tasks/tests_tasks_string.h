@@ -16,6 +16,12 @@ void test_digitRevers();
 
 void test_convertsStringByReplacingDigit();
 
+void test_getCountPalindromeWords();
+
+void test_wordsOrdered();
+
+void test_identifyIdenticalWords();
+
 void test_tasks_string();
 
 #endif//MAIN_C_TESTS_TASKS_STRING_H

@@ -65,10 +65,44 @@ void test_convertsStringByReplacingDigit() {
     ASSERT_STRING(res, str);
 }
 
+void test_getCountPalindromeWords() {
+    char str[] = "f33f, rey423, hhhhhh, ui55iu";
+
+    int res = 3;
+
+    assert(res == getCountPalindromeWords(str));
+
+    printf("test_getCountPalindromeWords - OK\n");
+}
+
+void test_wordsOrdered() {
+    char str[] = "anvfd jsfvj sklav";
+
+    bool res = true;
+
+    assert(wordOrdered(str) == res);
+
+    printf("test_wordsOrdered - OK\n");
+}
+
+void test_identifyIdenticalWords() {
+    char str[] = "cat dog camel";
+
+    bool res = identifyIdenticalWords(str);
+
+    assert(res == true);
+
+    printf("test_allWordsAreUnique2 - OK\n");
+}
+
+
 void test_tasks_string() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
     test_removeExtraSpaces();
     test_digitRevers();
     test_convertsStringByReplacingDigit();
+    test_getCountPalindromeWords();
+    test_wordsOrdered();
+    test_identifyIdenticalWords();
 }

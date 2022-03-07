@@ -160,3 +160,24 @@ int getCountPalindromeWords(char *str) {
     }
     return count;
 }
+
+// Task 13
+
+bool identifyIdenticalWords(char *str) {
+    getBagOfWords(&_bag, str);
+
+    WordDescriptor *curWord = _bag.words;
+    WordDescriptor *endWord = _bag.words + _bag.size - 1;
+
+    while (endWord > curWord) {
+        WordDescriptor *w = curWord + 1;
+        while (endWord >= w) {
+            if (areWordsEqual(*curWord, *w))
+                return false;
+            w++;
+        }
+        curWord++;
+    }
+
+    return true;
+}

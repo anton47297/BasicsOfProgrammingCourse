@@ -5,7 +5,7 @@
 int main() {
 
     //test_str();
-    //test_tasks_string();
+    test_tasks_string();
 
     return 0;
 }
