@@ -31,8 +31,12 @@ bool wordOrdered(char *str);
 //возвращает 1 если слово является палиндромом, иначе 0
 bool isPalindromeWord(WordDescriptor word);
 
-//В данной строке соседние слова разделены запятыми. Определить количество
-//слов-палиндромов
+// В данной строке соседние слова разделены запятыми.
+// Определить количество слов-палиндромов
 int getCountPalindromeWords(char *str);
+
+void printWord(WordDescriptor w);
+
+void printRevers(char *str);
 
 #endif//MAIN_C_TASKS_STRING_H

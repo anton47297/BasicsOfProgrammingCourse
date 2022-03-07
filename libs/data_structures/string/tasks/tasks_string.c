@@ -107,6 +107,26 @@ bool wordOrdered(char *str) {
     return true;
 }
 
+// Task 7
+
+void printWord(WordDescriptor w) {
+    char *endBuffer = copy(w.begin, w.end, _stringBuffer);
+
+    *endBuffer = '\0';
+
+    printf("%s", _stringBuffer);
+}
+
+void printRevers(char *str) {
+    BagOfWords w;
+    getBagOfWords(&w, str);
+
+    for (int i = w.size - 1; i >= 0; --i) {
+        printWord(w.words[i]);
+        printf("\n");
+    }
+}
+
 // Task 8
 
 bool isPalindromeWord(WordDescriptor word) {

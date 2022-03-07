@@ -144,3 +144,13 @@ int areWordsEqual(WordDescriptor w1,
 
     return !memcmp(w1.begin, w2.begin, w1.end - w1.begin);
 }
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    bag->size = 0;
+    WordDescriptor w;
+
+    while (getWord(s, &w)) {
+        bag->words[bag->size++] = w;
+        s = w.end;
+    }
+}

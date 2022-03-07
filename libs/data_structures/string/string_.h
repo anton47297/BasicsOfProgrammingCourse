@@ -5,6 +5,7 @@
 #include <memory.h>
 #include <stdbool.h>
 #include <stddef.h>
+#include <stdio.h>
 
 #define MAX_STRING_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100
@@ -16,6 +17,14 @@ typedef struct WordDescriptor {
     char *begin;// позиция начала слова
     char *end;  // позиция первого символа, после последнего символа слова
 } WordDescriptor;
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+
+BagOfWords _bag ;
+BagOfWords _bag2 ;
 
 // возвращает количество символов в строке (не считая ноль-символ)
 size_t strlen_(char *begin);
@@ -90,5 +99,7 @@ int getWordSeparatedByComma(char *beginSearch, WordDescriptor *word);
 //вернёт значение 0, если слово w1 не совпадает со словом w2 иначе 1
 int areWordsEqual(WordDescriptor w1,
                   WordDescriptor w2);
+
+void getBagOfWords(BagOfWords *bag, char *s);
 
 #endif//MAIN_C_STRING__H
