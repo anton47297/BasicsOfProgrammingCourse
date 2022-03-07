@@ -1,6 +1,6 @@
 #include "string_.h"
 
-size_t strlen(char *begin) {
+size_t strlen_(const char *begin) {
     char *end = begin;
     while (*end != '\0')
         end++;
@@ -84,7 +84,7 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource,
     return beginDestination;
 }
 
-char *getEndOfString(char *str){
+char *getEndOfString(char *str) {
     while (*str)
         str++;
 
@@ -99,7 +99,6 @@ int getWord(char *beginSearch, WordDescriptor *word) {
     word->end = findSpace(word->begin);
 
     return 1;
-
 }
 
 int getWordRevers(char *rbegin, char *rend, WordDescriptor *word) {
@@ -110,5 +109,25 @@ int getWordRevers(char *rbegin, char *rend, WordDescriptor *word) {
     word->end = findSpaceReverse(word->end, rend);
 
     return 1;
+}
 
+char *findComma(char *begin) {
+    while (*begin != '\0') {
+        if (*begin == ',')
+            return begin;
+
+        begin++;
+    }
+
+    return begin;
+}
+
+int getWordSeparatedByComma(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findComma(word->begin);
+
+    return 1;
 }

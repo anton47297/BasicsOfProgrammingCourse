@@ -15,7 +15,7 @@ void assertString(const char *expected, char *got,
         fprintf(stderr, "%s - OK\n", funcName);
 }
 
-void test_removeNonLetters1() {
+void test_removeNonLetters() {
     char str[] = "38r 3dbd f ";
 
     removeNonLetters(str);
@@ -25,22 +25,7 @@ void test_removeNonLetters1() {
     ASSERT_STRING(res, str);
 }
 
-void test_removeNonLetters2() {
-    char str[] = "    ";
-
-    removeNonLetters(str);
-
-    char res[] = "";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_removeNonLetters() {
-    test_removeNonLetters1();
-    test_removeNonLetters2();
-}
-
-void test_removeAdjacentEqualLetters1() {
+void test_removeAdjacentEqualLetters() {
     char str[] = "ddgsiiwwwnx";
 
     removeAdjacentEqualLetters(str);
@@ -50,22 +35,7 @@ void test_removeAdjacentEqualLetters1() {
     ASSERT_STRING(res, str);
 }
 
-void test_removeAdjacentEqualLetters2() {
-    char str[] = "h1gwwbwigw1";
-
-    removeAdjacentEqualLetters(str);
-
-    char res[] = "h1gwbwigw1";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_removeAdjacentEqualLetters() {
-    test_removeAdjacentEqualLetters1();
-    test_removeAdjacentEqualLetters2();
-}
-
-void test_removeExtraSpaces1() {
+void test_removeExtraSpaces() {
     char str[] = "er    re fs   2 4  c";
 
     removeExtraSpaces(str);
@@ -75,23 +45,7 @@ void test_removeExtraSpaces1() {
     ASSERT_STRING(res, str);
 }
 
-void test_removeExtraSpaces2() {
-    char str[] = "  fef     fewwd uy     pop";
-
-    removeExtraSpaces(str);
-
-    char res[] = " fef fewwd uy pop";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_removeExtraSpaces() {
-    test_removeExtraSpaces1();
-    test_removeExtraSpaces2();
-}
-
-
-void test_digitRevers1() {
+void test_digitRevers() {
     char str[] = "5gd389he ey63 eh38";
 
     digitRevers(str);
@@ -101,22 +55,7 @@ void test_digitRevers1() {
     ASSERT_STRING(res, str);
 }
 
-void test_digitRevers2() {
-    char str[] = "78hdy 7750 6c74clsls";
-
-    digitRevers(str);
-
-    char res[] = "hdy87 0577 cclsls476";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_digitRevers() {
-    test_digitRevers1();
-    test_digitRevers2();
-}
-
-void test_convertsStringByReplacingDigit1() {
+void test_convertsStringByReplacingDigit() {
     char str[] = "2mme";
 
     convertsStringByReplacingDigit(str);
@@ -125,22 +64,6 @@ void test_convertsStringByReplacingDigit1() {
 
     ASSERT_STRING(res, str);
 }
-
-void test_convertsStringByReplacingDigit2() {
-    char str[] = "1pwn3tf 1";
-
-    convertsStringByReplacingDigit(str);
-
-    char res[] = " pwn   tf  ";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_convertsStringByReplacingDigit() {
-    test_convertsStringByReplacingDigit1();
-    test_convertsStringByReplacingDigit2();
-}
-
 
 void test_tasks_string() {
     test_removeNonLetters();

@@ -86,3 +86,37 @@ void convertsStringByReplacingDigit(char *str) {
 
     *str = '\0';
 }
+
+// Task 8
+
+int isPalindromeWord(WordDescriptor word) {
+    char *left = word.begin;
+    char *right = word.end - 1;
+
+    while (right - left > 0) {
+        if (*left != *right)
+            return 0;
+
+        left++;
+        right--;
+    }
+
+    return 1;
+}
+
+int getCountPalindromeWords(char *str) {
+    WordDescriptor word;
+    int count = 0;
+
+    if (*str == '\0')
+        return count;
+
+    char *last = str;
+
+    while (getWordSeparatedByComma(last, &word)) {
+        if (isPalindromeWord(word))
+            count++;
+        last = word.end + 1;
+    }
+    return count;
+}
