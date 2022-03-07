@@ -18,7 +18,7 @@ typedef struct WordDescriptor {
 } WordDescriptor;
 
 // возвращает количество символов в строке (не считая ноль-символ)
-size_t strlen_(const char *begin);
+size_t strlen_(char *begin);
 
 // возвращает указатель на первый элемент с кодом ch, расположенным
 // на ленте памяти между адресами begin и end не включая end.
@@ -86,5 +86,9 @@ char *findComma(char *begin);
 //случае будет возвращено значение 1 и в переменную word типа WordDescriptor
 //будут записаны позиции начала слова, и первого символа после конца слова
 int getWordSeparatedByComma(char *beginSearch, WordDescriptor *word);
+
+//вернёт значение 0, если слово w1 не совпадает со словом w2 иначе 1
+int areWordsEqual(WordDescriptor w1,
+                  WordDescriptor w2);
 
 #endif//MAIN_C_STRING__H

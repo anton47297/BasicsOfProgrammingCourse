@@ -87,21 +87,41 @@ void convertsStringByReplacingDigit(char *str) {
     *str = '\0';
 }
 
+// Task 6
+
+bool wordOrdered(char *str) {
+    WordDescriptor w1;
+    WordDescriptor w2;
+
+    if (!getWord(str, &w1))
+        return true;
+
+    while (getWord(str, &w2)) {
+        if (!areWordsEqual(w1, w2) && strcmp(w1.begin, w2.begin) > 0)
+            return false;
+
+        w1 = w2;
+        str = w2.end;
+    }
+
+    return true;
+}
+
 // Task 8
 
-int isPalindromeWord(WordDescriptor word) {
+bool isPalindromeWord(WordDescriptor word) {
     char *left = word.begin;
     char *right = word.end - 1;
 
     while (right - left > 0) {
         if (*left != *right)
-            return 0;
+            return false;
 
         left++;
         right--;
     }
 
-    return 1;
+    return true;
 }
 
 int getCountPalindromeWords(char *str) {

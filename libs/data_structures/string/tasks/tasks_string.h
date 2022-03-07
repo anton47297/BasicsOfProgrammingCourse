@@ -26,8 +26,10 @@ void digitRevers(char *str);
 // заменяя каждую цифру соответствующим ей числом пробелов
 void convertsStringByReplacingDigit(char *str);
 
+bool wordOrdered(char *str);
+
 //возвращает 1 если слово является палиндромом, иначе 0
-int isPalindromeWord(WordDescriptor word);
+bool isPalindromeWord(WordDescriptor word);
 
 //В данной строке соседние слова разделены запятыми. Определить количество
 //слов-палиндромов
