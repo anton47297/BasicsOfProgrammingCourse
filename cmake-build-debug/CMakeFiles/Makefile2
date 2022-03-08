@@ -145,6 +145,7 @@ libs/data_structures/string/clean: libs/data_structures/string/CMakeFiles/string
 
 # All Build rule for target.
 CMakeFiles/Lab.dir/all: libs/data_structures/CMakeFiles/data_structures.dir/all
+CMakeFiles/Lab.dir/all: libs/data_structures/string/CMakeFiles/string.dir/all
 CMakeFiles/Lab.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab.dir\build.make CMakeFiles/Lab.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab.dir\build.make CMakeFiles/Lab.dir/build
@@ -153,7 +154,7 @@ CMakeFiles/Lab.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\C\Lab\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Lab.dir/rule

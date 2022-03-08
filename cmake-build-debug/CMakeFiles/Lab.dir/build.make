@@ -89,6 +89,7 @@ Lab.exe: CMakeFiles/Lab.dir/main.c.obj
 Lab.exe: CMakeFiles/Lab.dir/build.make
 Lab.exe: libs/data_structures/libdata_structures.a
 Lab.exe: libs/algorithms/libalgorithms.a
+Lab.exe: libs/data_structures/string/libstring.a
 Lab.exe: CMakeFiles/Lab.dir/linklibs.rsp
 Lab.exe: CMakeFiles/Lab.dir/objects1.rsp
 Lab.exe: CMakeFiles/Lab.dir/link.txt

@@ -154,3 +154,8 @@ void getBagOfWords(BagOfWords *bag, char *s) {
         s = w.end;
     }
 }
+
+void wordDescriptorToString(WordDescriptor word, char* destination) {
+    destination = copy(word.begin, word.end, destination);
+    *destination = '\0';
+}

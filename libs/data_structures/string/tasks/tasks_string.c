@@ -161,6 +161,32 @@ int getCountPalindromeWords(char *str) {
     return count;
 }
 
+// Task 12
+
+bool lastOfWordsOfFirstStringWhichIsInSecondString(char *str1, char *str2, WordDescriptor *w) {
+
+    if (*str1 == '\0' && *str2 == '\0')
+        return false;
+
+    getBagOfWords(&_bag, str2);
+
+    WordDescriptor *_bagEnd = _bag.size + _bag.words;
+    char *endStr1 = getEndOfString(str1);
+
+    WordDescriptor lastWord;
+    while (getWordRevers(endStr1 - 1, str1 - 1, &lastWord)) {
+        for (WordDescriptor *curWord = _bag.words; curWord < _bagEnd; curWord++) {
+            if (areWordsEqual(lastWord, *curWord)) {
+                *w = lastWord;
+                return true;
+            }
+        }
+        endStr1 = lastWord.begin;
+    }
+
+    return false;
+}
+
 // Task 13
 
 bool identifyIdenticalWords(char *str) {

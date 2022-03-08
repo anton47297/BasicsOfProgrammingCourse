@@ -70,7 +70,7 @@ void test_getCountPalindromeWords() {
 
     int res = 3;
 
-    assert(res == getCountPalindromeWords(str));
+    assert(getCountPalindromeWords(str) == res);
 
     printf("test_getCountPalindromeWords - OK\n");
 }
@@ -95,6 +95,19 @@ void test_identifyIdenticalWords() {
     printf("test_allWordsAreUnique2 - OK\n");
 }
 
+void test_lastOfWordsOfFirstStringWhichIsInSecondString() {
+    char str1[] = "";
+    char str2[] = "last read qdca";
+
+    WordDescriptor w;
+
+    bool res = lastOfWordsOfFirstStringWhichIsInSecondString(str1, str2, &w);
+
+    assert(false == res);
+
+    printf("test_lastWordsOfTheStr1WhichIsInTheStr2_1 - OK\n");
+}
+
 
 void test_tasks_string() {
     test_removeNonLetters();
@@ -105,4 +118,5 @@ void test_tasks_string() {
     test_getCountPalindromeWords();
     test_wordsOrdered();
     test_identifyIdenticalWords();
+    test_lastOfWordsOfFirstStringWhichIsInSecondString();
 }

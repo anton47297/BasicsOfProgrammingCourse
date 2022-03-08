@@ -39,6 +39,8 @@ void printWord(WordDescriptor w);
 
 void printRevers(char *str);
 
+bool lastOfWordsOfFirstStringWhichIsInSecondString(char *str1, char *str2, WordDescriptor *w);
+
 bool identifyIdenticalWords(char *str);
 
 #endif//MAIN_C_TASKS_STRING_H
