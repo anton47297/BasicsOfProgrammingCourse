@@ -26,4 +26,6 @@ void test_tasks_string();
 
 void test_lastOfWordsOfFirstStringWhichIsInSecondString();
 
+void test_getStringWithMixWords();
+
 #endif//MAIN_C_TESTS_TASKS_STRING_H

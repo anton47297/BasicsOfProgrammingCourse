@@ -35,6 +35,8 @@ bool isPalindromeWord(WordDescriptor word);
 // Определить количество слов-палиндромов
 int getCountPalindromeWords(char *str);
 
+void getStringWithMixWords(char *str1, char *str2, char *res);
+
 void printWord(WordDescriptor w);
 
 void printRevers(char *str);

@@ -108,6 +108,18 @@ void test_lastOfWordsOfFirstStringWhichIsInSecondString() {
     printf("test_lastWordsOfTheStr1WhichIsInTheStr2_1 - OK\n");
 }
 
+void test_getStringWithMixWords() {
+    char str1[] ="i bulldog dumpling cat";
+    char str2[] = "like";
+
+    char str3[MAX_STRING_SIZE];
+
+    getStringWithMixWords(str1, str2, str3);
+
+    char res[] = "i like bulldog dumpling cat";
+
+    ASSERT_STRING(res, str3);
+}
 
 void test_tasks_string() {
     test_removeNonLetters();
@@ -119,4 +131,5 @@ void test_tasks_string() {
     test_wordsOrdered();
     test_identifyIdenticalWords();
     test_lastOfWordsOfFirstStringWhichIsInSecondString();
+    test_getStringWithMixWords();
 }
