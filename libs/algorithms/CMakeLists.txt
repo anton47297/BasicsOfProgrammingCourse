@@ -1,2 +1,6 @@
 add_library(algorithms
-        algorithms.c)
+        algorithms.c
+
+        array/array.c
+
+        sortings_array/sortings_array.c)

@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
   "../libs/CMakeLists.txt"
   "../libs/algorithms/CMakeLists.txt"
+  "../libs/complexity_sorting_by_time/CMakeLists.txt"
   "../libs/data_structures/CMakeLists.txt"
   "../libs/data_structures/string/CMakeLists.txt"
   "C:/Program Files/JetBrains/CLion 2021.2.1/bin/cmake/win/share/cmake-3.20/Modules/CMakeCInformation.cmake"
@@ -50,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/data_structures/string/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/complexity_sorting_by_time/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -58,4 +60,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
   "libs/data_structures/string/CMakeFiles/string.dir/DependInfo.cmake"
   "libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
+  "libs/complexity_sorting_by_time/CMakeFiles/complexity_sorting_by_time.dir/DependInfo.cmake"
   )

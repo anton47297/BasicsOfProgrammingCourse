@@ -153,6 +153,54 @@ algorithms.c.s:
 	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.s
 .PHONY : algorithms.c.s
 
+array/array.obj: array/array.c.obj
+.PHONY : array/array.obj
+
+# target to build an object file
+array/array.c.obj:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj
+.PHONY : array/array.c.obj
+
+array/array.i: array/array.c.i
+.PHONY : array/array.i
+
+# target to preprocess a source file
+array/array.c.i:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.i
+.PHONY : array/array.c.i
+
+array/array.s: array/array.c.s
+.PHONY : array/array.s
+
+# target to generate assembly for a file
+array/array.c.s:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.s
+.PHONY : array/array.c.s
+
+sortings_array/sortings_array.obj: sortings_array/sortings_array.c.obj
+.PHONY : sortings_array/sortings_array.obj
+
+# target to build an object file
+sortings_array/sortings_array.c.obj:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.obj
+.PHONY : sortings_array/sortings_array.c.obj
+
+sortings_array/sortings_array.i: sortings_array/sortings_array.c.i
+.PHONY : sortings_array/sortings_array.i
+
+# target to preprocess a source file
+sortings_array/sortings_array.c.i:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.i
+.PHONY : sortings_array/sortings_array.c.i
+
+sortings_array/sortings_array.s: sortings_array/sortings_array.c.s
+.PHONY : sortings_array/sortings_array.s
+
+# target to generate assembly for a file
+sortings_array/sortings_array.c.s:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.s
+.PHONY : sortings_array/sortings_array.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -165,6 +213,12 @@ help:
 	@echo ... algorithms.obj
 	@echo ... algorithms.i
 	@echo ... algorithms.s
+	@echo ... array/array.obj
+	@echo ... array/array.i
+	@echo ... array/array.s
+	@echo ... sortings_array/sortings_array.obj
+	@echo ... sortings_array/sortings_array.i
+	@echo ... sortings_array/sortings_array.s
 .PHONY : help
 
 

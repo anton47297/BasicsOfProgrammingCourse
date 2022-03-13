@@ -87,6 +87,7 @@ Lab_EXTERNAL_OBJECTS =
 
 Lab.exe: CMakeFiles/Lab.dir/main.c.obj
 Lab.exe: CMakeFiles/Lab.dir/build.make
+Lab.exe: libs/algorithms/libalgorithms.a
 Lab.exe: libs/data_structures/libdata_structures.a
 Lab.exe: libs/algorithms/libalgorithms.a
 Lab.exe: libs/data_structures/string/libstring.a
