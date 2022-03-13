@@ -67,7 +67,6 @@ int any_(const int *a, size_t n, int (*predicate )(int));
 // размера n и сохраняет результат в массиве dest размера n
 void forEach_(const int *source, int *dest, size_t n, const int (*
                                                                  predicate )(int));
-
 // возвращает количество элементов массива data размера n
 // удовлетворяющих функции-предикату predicate
 int countIf_(const int *a, size_t n, int (*predicate )(int));
@@ -89,7 +88,6 @@ int findIndexIf(const int *a, const size_t n, int (*f)(int));
 //возвращает индекс i последнего чётного элемента массива a размера  n если элемент найден, иначе: -1
 int findLastEvenIndex(const int *a, const size_t n);
 
-
 //возвращает индекс i элемента с конца массива а размера n (по функции-предикату) f, если элемент найден, иначе: -1
 int findIndexLastIf(const int *a, const size_t n, int (*f)(int));
 
@@ -105,10 +103,10 @@ void swap(int *a, int *b);
 //изменяет порядок элементов массива a размера n на обратный
 void reverseArray(int *a, size_t n);
 
-//возвращает "истина", если последовательность является паминдромом, иначе "ложь"
-int isPalindrom(const int *a, const size_t n);
+//возвращает "истина", если последовательность является палиндромом, иначе "ложь"
+int isPalindrome(const int *a, const size_t n);
 
-//сортировка выбором массива a размераом n
+//сортировка выбором массива a размером n
 void sortChoice(int *a, size_t n);
 
 //удаляет из массива a размера n все нечётные элементы
@@ -116,7 +114,6 @@ void removeAllOddElements(int *a, size_t *n);
 
 //вставляет элемент x  в позицию pos массива a размера n с сохранением относительного порядка других элементов
 void insertAnElement(int *a, size_t *n, size_t pos, int x);
-
 
 //удаляет элемент x на позиции pos из массива a размером n с сохранением относительного порядка других элементов
 void deleteByPosSaveOrder(int *a, size_t *n, const size_t pos);
@@ -143,6 +140,22 @@ int linearSearchMax(const int *a, const size_t n);
 size_t linearSearchLastMinIndex(const int *a, const size_t n);
 
 int linearSearchMin(const int *a, const size_t n);
+
+// возвращает позицию минимального элемента массива a размера n типа
+// long long в области, начинающейся с позиции pos.
+size_t getMinPosLongLong_(const long long *a, size_t n, size_t pos);
+
+// возвращает позицию минимального элемента массива a размера n типа
+// int в области, начинающейся с позиции pos.
+size_t getMinPosInt_(const int *a, size_t n, size_t pos);
+
+// возвращает максимальный элемент
+// массива a размера n типа int.
+int getMax_(const int *a, size_t n);
+
+// возвращает минимальный элемент
+// массива a размера n типа int.
+int getMin_(const int *a, size_t n);
 
 long long getSum(const int *a, const size_t n);
 

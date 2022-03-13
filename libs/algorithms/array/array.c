@@ -252,7 +252,7 @@ void reverseArray(int *a, size_t n) {
         swap(&a[i], &a[n - i - 1]);
 }
 
-int isPalindrom(const int *a, const size_t n) {
+int isPalindrome(const int *a, const size_t n) {
     size_t halfSize = n / 2;
     for (size_t i = 0; i < halfSize; i++)
         if (a[i] != a[n - i - 1])
@@ -377,6 +377,55 @@ bool isUniqueArray(const int *a, const size_t n) {
     }
     return true;
 }
+
+size_t getMinPosInt_(const int *const a,
+                      const size_t n,
+                      const size_t pos) {
+    int min = a[pos];
+    size_t minPos = pos;
+    for (size_t i = pos; i < n; i++)
+        if (a[i] < min) {
+            min = a[i];
+            minPos = i;
+        }
+
+    return minPos;
+}
+
+size_t getMinPosLongLong_(const long long *const a,
+                           const size_t n,
+                           const size_t pos) {
+    long long min = a[pos];
+    size_t minPos = pos;
+    for (size_t i = pos; i < n; i++)
+        if (a[i] < min) {
+            min = a[i];
+            minPos = i;
+        }
+
+    return minPos;
+}
+
+int getMax_(const int *const a,
+            const size_t n) {
+    int max = a[0];
+    for (size_t i = 1; i < n; i++)
+        if (a[i] > max)
+            max = a[i];
+
+    return max;
+}
+
+int getMin_(const int *const a,
+            const size_t n) {
+    int min = a[0];
+    for (size_t i = 1; i < n; i++)
+        if (a[i] < min)
+            min = a[i];
+
+    return min;
+}
+
 
 long long getSum(const int *a, const size_t n) {
     int sum = 0;
