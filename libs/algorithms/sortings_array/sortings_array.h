@@ -22,4 +22,16 @@ void shellSort(int *a, size_t n);
 
 void radixSort(int *a, size_t n);
 
+unsigned long long getBubbleSortNComps(int *a, size_t n);
+
+unsigned long long getSelectionSortNComps(int *a, size_t n);
+
+unsigned long long getInsertionSortNComps(int *a, size_t n);
+
+unsigned long long getCombSortNComps(int *a, size_t n);
+
+unsigned long long getShellSortNComps(int *a, size_t n);
+
+unsigned long long getRadixSortNComps(int *a, size_t n);
+
 #endif//MAIN_C_SORTINGS_ARRAY_H
