@@ -104,11 +104,39 @@ libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.s"
 	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\C\Lab\libs\algorithms\sortings_array\sortings_array.c -o CMakeFiles\algorithms.dir\sortings_array\sortings_array.c.s
 
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj: libs/algorithms/CMakeFiles/algorithms.dir/flags.make
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj: ../libs/algorithms/sortings_array/tests/tests_sortings_array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\algorithms.dir\sortings_array\tests\tests_sortings_array.c.obj -c C:\C\Lab\libs\algorithms\sortings_array\tests\tests_sortings_array.c
+
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.i"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\C\Lab\libs\algorithms\sortings_array\tests\tests_sortings_array.c > CMakeFiles\algorithms.dir\sortings_array\tests\tests_sortings_array.c.i
+
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.s"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\C\Lab\libs\algorithms\sortings_array\tests\tests_sortings_array.c -o CMakeFiles\algorithms.dir\sortings_array\tests\tests_sortings_array.c.s
+
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj: libs/algorithms/CMakeFiles/algorithms.dir/flags.make
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj: ../libs/algorithms/sortings_array/generating_arrays/generating_arrays.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\algorithms.dir\sortings_array\generating_arrays\generating_arrays.c.obj -c C:\C\Lab\libs\algorithms\sortings_array\generating_arrays\generating_arrays.c
+
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.i"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\C\Lab\libs\algorithms\sortings_array\generating_arrays\generating_arrays.c > CMakeFiles\algorithms.dir\sortings_array\generating_arrays\generating_arrays.c.i
+
+libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.s"
+	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\C\Lab\libs\algorithms\sortings_array\generating_arrays\generating_arrays.c -o CMakeFiles\algorithms.dir\sortings_array\generating_arrays\generating_arrays.c.s
+
 # Object files for target algorithms
 algorithms_OBJECTS = \
 "CMakeFiles/algorithms.dir/algorithms.c.obj" \
 "CMakeFiles/algorithms.dir/array/array.c.obj" \
-"CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.obj"
+"CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.obj" \
+"CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj" \
+"CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj"
 
 # External object files for target algorithms
 algorithms_EXTERNAL_OBJECTS =
@@ -116,9 +144,11 @@ algorithms_EXTERNAL_OBJECTS =
 libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj
 libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj
 libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.obj
+libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj
+libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj
 libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/build.make
 libs/algorithms/libalgorithms.a: libs/algorithms/CMakeFiles/algorithms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libalgorithms.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\C\Lab\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libalgorithms.a"
 	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && $(CMAKE_COMMAND) -P CMakeFiles\algorithms.dir\cmake_clean_target.cmake
 	cd /d C:\C\Lab\cmake-build-debug\libs\algorithms && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithms.dir\link.txt --verbose=$(VERBOSE)
 

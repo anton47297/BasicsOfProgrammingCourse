@@ -167,19 +167,6 @@ algorithms/fast:
 	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
 .PHONY : algorithms/fast
 
-#=============================================================================
-# Target rules for targets named complexity_sorting_by_time
-
-# Build rule for target.
-complexity_sorting_by_time: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 complexity_sorting_by_time
-.PHONY : complexity_sorting_by_time
-
-# fast build rule for target.
-complexity_sorting_by_time/fast:
-	$(MAKE) $(MAKESILENT) -f libs\complexity_sorting_by_time\CMakeFiles\complexity_sorting_by_time.dir\build.make libs/complexity_sorting_by_time/CMakeFiles/complexity_sorting_by_time.dir/build
-.PHONY : complexity_sorting_by_time/fast
-
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -214,7 +201,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Lab
 	@echo ... algorithms
-	@echo ... complexity_sorting_by_time
 	@echo ... data_structures
 	@echo ... string
 	@echo ... main.obj

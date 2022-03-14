@@ -9,4 +9,6 @@
 
 void universalSwap(void *a, void *b, size_t size);
 
+int digit(int n, int k, int N, int M);
+
 #endif//LAB_ALGORITHMS_H

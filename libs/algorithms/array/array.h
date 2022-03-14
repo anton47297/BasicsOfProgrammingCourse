@@ -11,9 +11,6 @@ int cmp_long_long(const void *pa, const void *pb);
 
 int countNUnique(long long *a, int n);
 
-//сортировка вставкой
-void insertionSort(int *a, const size_t size);
-
 //ввод массива data размера n
 void inputArray_(int *a, size_t n);
 
@@ -168,5 +165,9 @@ bool isNonDescendingSorted(int *a, int n);
 int countValues(const int *a, int n, int value);
 
 int max(int a, int b);
+
+bool isOrdered(const int *a, size_t n);
+
+static void getPrefixSums(int *a, size_t n);
 
 #endif//MAIN_C_ARRAY_H

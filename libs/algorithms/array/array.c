@@ -1,9 +1,9 @@
 #include "array.h"
-#include <stdio.h>
-#include <limits.h>
 #include <assert.h>
-#include <stdbool.h>
+#include <limits.h>
 #include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
 
 int compare_ints(const void *a, const void *b) {
     int arg1 = *(const int *) a;
@@ -36,19 +36,6 @@ int countNUnique(long long *a, int n) {
     return count;
 }
 
-void insertionSort(int *a, const size_t size) {
-    for (size_t i = 1; i < size; i++) {
-
-        int t = a[i];
-        int j = i;
-        while (j > 0 && a[j - 1] > t) {
-            a[j] = a[j - 1];
-            j--;
-        }
-        a[j] = t;
-    }
-}
-
 void inputArray_(int *const a, const size_t n) {
     for (size_t i = 0; i < n; i++)
         scanf("%d", &a[i]);
@@ -67,7 +54,7 @@ void append_(int *const a, size_t *const n, const int value) {
 
 void insert_(int *const a, size_t *const n, const size_t pos,
              const int value) {
-    assert (pos <= *n);
+    assert(pos <= *n);
     if (*n != 0) {
         size_t lowBound = (pos == 0) ? SIZE_MAX : pos;
 
@@ -99,29 +86,28 @@ size_t linearSearch_(const int *a, const size_t n, int x) {
     return n;
 }
 
-int any_(const int *a, size_t n, int (*predicate )(int)) {
+int any_(const int *a, size_t n, int (*predicate)(int)) {
     for (size_t i = 0; i < n; i++)
         if (predicate(a[i]))
             return 1;
     return 0;
 }
 
-int all_(const int *a, size_t n, int (*predicate )(int)) {
+int all_(const int *a, size_t n, int (*predicate)(int)) {
     for (size_t i = 0; i < n; i++)
         if (!predicate(a[i]))
             return 0;
     return 1;
 }
 
-int countIf_(const int *const a, const size_t n, int (*predicate )(int)) {
+int countIf_(const int *const a, const size_t n, int (*predicate)(int)) {
     int count = 0;
     for (size_t i = 0; i < n; i++)
         count += predicate(a[i]);
     return count;
 }
 
-void deleteIf_(int *const a, size_t *const n, int (*deletePredicate )(
-                                                      int)) {
+void deleteIf_(int *const a, size_t *const n, int (*deletePredicate)(int)) {
     size_t iRead = 0;
     while (iRead < *n && !deletePredicate(a[iRead]))
         iRead++;
@@ -130,15 +116,13 @@ void deleteIf_(int *const a, size_t *const n, int (*deletePredicate )(
         if (!deletePredicate(a[iRead])) {
             a[iWrite] = a[iRead];
             iWrite++;
-
         }
         iRead++;
     }
     *n = iWrite;
 }
 
-void forEach_(const int *source, int *dest, const size_t n, const int (*
-                                                                       predicate )(int)) {
+void forEach_(const int *source, int *dest, const size_t n, const int (*predicate)(int)) {
     for (size_t i = 0; i < n; i++)
         dest[i] = predicate(source[i]);
 }
@@ -162,9 +146,9 @@ size_t binarySearch(const int *a, size_t n, const int x) {
     int right = n - 1;
     while (left <= right) {
         int middle = (left + right) / 2;
-        if (a[middle] < x) // если ’истина’, искомый элемент лежит правее
+        if (a[middle] < x)// если ’истина’, искомый элемент лежит правее
             left = middle + 1;
-        else if (a[middle] > x) // если ’истина’, искомый элемент лежит левее
+        else if (a[middle] > x)// если ’истина’, искомый элемент лежит левее
             right = middle - 1;
         else
             return middle;
@@ -379,8 +363,8 @@ bool isUniqueArray(const int *a, const size_t n) {
 }
 
 size_t getMinPosInt_(const int *const a,
-                      const size_t n,
-                      const size_t pos) {
+                     const size_t n,
+                     const size_t pos) {
     int min = a[pos];
     size_t minPos = pos;
     for (size_t i = pos; i < n; i++)
@@ -393,8 +377,8 @@ size_t getMinPosInt_(const int *const a,
 }
 
 size_t getMinPosLongLong_(const long long *const a,
-                           const size_t n,
-                           const size_t pos) {
+                          const size_t n,
+                          const size_t pos) {
     long long min = a[pos];
     size_t minPos = pos;
     for (size_t i = pos; i < n; i++)
@@ -463,3 +447,19 @@ int max(int a, int b) {
     return a > b ? a : b;
 }
 
+bool isOrdered(const int *a, const size_t n) {
+    for (size_t i = 1; i < n; ++i)
+        if (a[i - 1] > a[i])
+            return false;
+    return true;
+}
+
+static void getPrefixSums(int *a, size_t n) {
+    int prev = a[0];
+    *a = 0;
+    for (int i = 1; i < n; i++) {
+        int t = a[i];
+        a[i] = prev + a[i - 1];
+        prev = t;
+    }
+}

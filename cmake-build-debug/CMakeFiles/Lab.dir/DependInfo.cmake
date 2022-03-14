@@ -22,8 +22,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
   "C:/C/Lab/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
+  "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
   "C:/C/Lab/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/DependInfo.cmake"
   )
 

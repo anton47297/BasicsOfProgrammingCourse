@@ -177,6 +177,30 @@ array/array.c.s:
 	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.s
 .PHONY : array/array.c.s
 
+sortings_array/generating_arrays/generating_arrays.obj: sortings_array/generating_arrays/generating_arrays.c.obj
+.PHONY : sortings_array/generating_arrays/generating_arrays.obj
+
+# target to build an object file
+sortings_array/generating_arrays/generating_arrays.c.obj:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj
+.PHONY : sortings_array/generating_arrays/generating_arrays.c.obj
+
+sortings_array/generating_arrays/generating_arrays.i: sortings_array/generating_arrays/generating_arrays.c.i
+.PHONY : sortings_array/generating_arrays/generating_arrays.i
+
+# target to preprocess a source file
+sortings_array/generating_arrays/generating_arrays.c.i:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.i
+.PHONY : sortings_array/generating_arrays/generating_arrays.c.i
+
+sortings_array/generating_arrays/generating_arrays.s: sortings_array/generating_arrays/generating_arrays.c.s
+.PHONY : sortings_array/generating_arrays/generating_arrays.s
+
+# target to generate assembly for a file
+sortings_array/generating_arrays/generating_arrays.c.s:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.s
+.PHONY : sortings_array/generating_arrays/generating_arrays.c.s
+
 sortings_array/sortings_array.obj: sortings_array/sortings_array.c.obj
 .PHONY : sortings_array/sortings_array.obj
 
@@ -201,6 +225,30 @@ sortings_array/sortings_array.c.s:
 	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.s
 .PHONY : sortings_array/sortings_array.c.s
 
+sortings_array/tests/tests_sortings_array.obj: sortings_array/tests/tests_sortings_array.c.obj
+.PHONY : sortings_array/tests/tests_sortings_array.obj
+
+# target to build an object file
+sortings_array/tests/tests_sortings_array.c.obj:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj
+.PHONY : sortings_array/tests/tests_sortings_array.c.obj
+
+sortings_array/tests/tests_sortings_array.i: sortings_array/tests/tests_sortings_array.c.i
+.PHONY : sortings_array/tests/tests_sortings_array.i
+
+# target to preprocess a source file
+sortings_array/tests/tests_sortings_array.c.i:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.i
+.PHONY : sortings_array/tests/tests_sortings_array.c.i
+
+sortings_array/tests/tests_sortings_array.s: sortings_array/tests/tests_sortings_array.c.s
+.PHONY : sortings_array/tests/tests_sortings_array.s
+
+# target to generate assembly for a file
+sortings_array/tests/tests_sortings_array.c.s:
+	cd /d C:\C\Lab\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.s
+.PHONY : sortings_array/tests/tests_sortings_array.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -216,9 +264,15 @@ help:
 	@echo ... array/array.obj
 	@echo ... array/array.i
 	@echo ... array/array.s
+	@echo ... sortings_array/generating_arrays/generating_arrays.obj
+	@echo ... sortings_array/generating_arrays/generating_arrays.i
+	@echo ... sortings_array/generating_arrays/generating_arrays.s
 	@echo ... sortings_array/sortings_array.obj
 	@echo ... sortings_array/sortings_array.i
 	@echo ... sortings_array/sortings_array.s
+	@echo ... sortings_array/tests/tests_sortings_array.obj
+	@echo ... sortings_array/tests/tests_sortings_array.i
+	@echo ... sortings_array/tests/tests_sortings_array.s
 .PHONY : help
 
 

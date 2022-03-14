@@ -12,6 +12,3 @@ C:/C/Lab/cmake-build-debug/libs/data_structures/string/CMakeFiles/rebuild_cache.
 C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir
 C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/edit_cache.dir
 C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/rebuild_cache.dir
-C:/C/Lab/cmake-build-debug/libs/complexity_sorting_by_time/CMakeFiles/complexity_sorting_by_time.dir
-C:/C/Lab/cmake-build-debug/libs/complexity_sorting_by_time/CMakeFiles/edit_cache.dir
-C:/C/Lab/cmake-build-debug/libs/complexity_sorting_by_time/CMakeFiles/rebuild_cache.dir

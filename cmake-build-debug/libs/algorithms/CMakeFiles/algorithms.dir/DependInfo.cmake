@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/C/Lab/libs/algorithms/algorithms.c" "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj"
   "C:/C/Lab/libs/algorithms/array/array.c" "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj"
+  "C:/C/Lab/libs/algorithms/sortings_array/generating_arrays/generating_arrays.c" "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/generating_arrays/generating_arrays.c.obj"
   "C:/C/Lab/libs/algorithms/sortings_array/sortings_array.c" "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/sortings_array.c.obj"
+  "C:/C/Lab/libs/algorithms/sortings_array/tests/tests_sortings_array.c" "C:/C/Lab/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/sortings_array/tests/tests_sortings_array.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
