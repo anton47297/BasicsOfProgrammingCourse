@@ -39,12 +39,12 @@ void checkTime(void (*sortFunc)(int *, size_t),
 
 void timeExperiment() {
     SortFunc sorts[] = {
-            {bubbleSort,    "bubbleSort"},
-            {selectionSort, "selectionSort"},
-            {insertionSort, "insertionSort"},
-            {combSort,      "combSort"},
-            {shellSort,     "shellSort"},
-            {radixSort,     "radixSort"},
+            {getBubbleSortNComps,    "bubbleSort"},
+            {getSelectionSortNComps, "selectionSort"},
+            {getInsertionSortNComps, "insertionSort"},
+            {getCombSortNComps,      "combSort"},
+            {getShellSortNComps,     "shellSort"},
+            {getRadixSortNComps,     "radixSort"},
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);

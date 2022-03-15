@@ -38,7 +38,7 @@ void combSort(int *a, const size_t n) {
         swapped = 0;
         for (size_t i = 0, j = i + step; j < n; ++i, ++j) {
             if (a[i] > a[j]) {
-                universalSwap(&a[i], &a[j], sizeof(int));
+                swap(&a[i], &a[j]);
                 swapped = 1;
             }
         }
@@ -92,7 +92,7 @@ void radixSort(int *a, size_t n) {
 /* --------------------------------------------------------------------------------------------
    -------------------------------------------------------------------------------------------- */
 
-unsigned long long getBubbleSortNComps(int *a, const size_t n) {
+long long getBubbleSortNComps(int *a, const size_t n) {
     unsigned long long nComps = 0;
     for (int i = 0; ++nComps && i < n; ++i)
         for (int j = i; ++nComps && j < n; ++j)
@@ -102,7 +102,7 @@ unsigned long long getBubbleSortNComps(int *a, const size_t n) {
     return nComps;
 }
 
-unsigned long long getSelectionSortNComps(int *a, size_t n) {
+long long getSelectionSortNComps(int *a, size_t n) {
     unsigned long long nComps = 0;
     for (int i = 0; ++nComps && i < n; i++) {
         int min = a[i];
@@ -120,7 +120,7 @@ unsigned long long getSelectionSortNComps(int *a, size_t n) {
 }
 
 
-unsigned long long getInsertionSortNComps(int *a, const size_t n) {
+long long getInsertionSortNComps(int *a, const size_t n) {
     unsigned long long nComps = 0;
     for (size_t i = 1; ++nComps && i < n; i++) {
         int t = a[i];
@@ -135,7 +135,7 @@ unsigned long long getInsertionSortNComps(int *a, const size_t n) {
 }
 
 
-unsigned long long getCombSortNComps(int *a, const size_t n) {
+long long getCombSortNComps(int *a, const size_t n) {
     size_t step = n;
     int swapped = 1;
     unsigned long long nComps = 2;
@@ -153,7 +153,7 @@ unsigned long long getCombSortNComps(int *a, const size_t n) {
 }
 
 
-unsigned long long getShellSortNComps(int *a, const size_t n) {
+long long getShellSortNComps(int *a, const size_t n) {
     unsigned long long nComps = 0;
     for (size_t step = n / 2; ++nComps && step > 0; step /= 2)
         for (size_t i = step; ++nComps && i < n; i++) {
@@ -167,7 +167,7 @@ unsigned long long getShellSortNComps(int *a, const size_t n) {
     return nComps;
 }
 
-unsigned long long getRadixSortNComps(int *a, const size_t n) {
+long long getRadixSortNComps(int *a, const size_t n) {
     int N = 8;
     int *l = a;
     int *r = a + n;
@@ -200,4 +200,3 @@ unsigned long long getRadixSortNComps(int *a, const size_t n) {
 
     return nComps + 2;
 }
-
